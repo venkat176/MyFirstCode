@@ -1,0 +1,106 @@
+*
+{
+ box-sizing: border-box;
+}
+body
+{
+    background-color: azure;
+}
+header
+{
+    background-color: coral;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.list
+{
+    background-color:chocolate; 
+    list-style: none;
+    border-radius: 10px;
+    text-align: right;
+}
+.list li
+{
+    display: inline-block;
+    padding: 3px;
+    margin: 10px;
+    background-color:goldenrod;
+    border-radius:20px;
+}
+.list li a
+{
+    text-decoration: none;
+    padding: 2px;
+    font-size: 100%;
+    font-family:Verdana, sans-serif;
+    margin-right: 50x;
+    color: white;
+    
+}
+.list li a:hover
+{
+    background-color: yellowgreen;
+    border-radius: 20px;
+}
+img
+{
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+}
+
+.main
+{
+    background-color: bisque;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 5px;
+    width: 60%;
+    float: left;
+    text-align: center;
+    clear: left;
+    text-align: justify;
+}
+.menu
+{
+    background-color: honeydew;
+    padding: 2%;
+    border-radius: 10px;
+    width: 39% ;
+    clear:right;
+    float: right;
+    text-align: center;
+    text-align: justify;
+}    
+.bottom
+{
+    clear: both;
+} 
+article
+{
+    background-color:lightgrey;
+    padding: 2%;
+    border-radius: 10px;
+}
+footer
+{
+    background-color:coral;
+    clear: both;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 10px;
+}
+@media screen and ( max-width:1000px)
+{
+    .main, .menu, .bottom, img
+    {
+        width: 100%;
+    }
+}
+video
+{
+    border-radius: 10px;
+    height: 20%;
+}

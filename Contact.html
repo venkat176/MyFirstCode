@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <link type="text/css" rel="stylesheet" href="contact.css">
+    <script src="contact.js"></script>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+</head>
+<div class="right">
+
+</div>
+
+<body>
+    <h1>Contact Us</h1>
+    <img src="imagescontact.jpg">
+    <div class="left">
+        <fieldset class="feild ">
+            <legend>Xencia</legend>
+            <form onsubmit="validateForm()">
+            <div class="row">
+                <label for="contact" >Contact Type:</label>
+                <select id="dhr">
+                    <option name="HR" onclick="myHR()">HR</option>
+                    <option name=Finance onclick="myFin()">Finance</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="Contact Name" >Contact Name:</label>
+                <input type="text" value="" placeholder="enter Contact Name" onchange="validateName()" id="conname">
+            </div>
+            <div class="row">
+                <label for="Email" >Email:</label>
+                <input type="email" value="" placeholder="enter Email id" onchange="validateEmail()" id="gmail">
+            </div>
+            <div class="row">
+                <label for="mobile" >Mobile no:</label>
+                <input type="tel" value="" onchange="validateNum()" placeholder="enter mobile no.." maxlength="10" id="mobnum">
+            </div>
+            <div class="row">
+                <span><label for="reason" >Reasaon:</label><textarea id="reas" type="text" value=""
+                        placeholder="enter your Reason here" rows="5" cols="50"></textarea></span>
+                </form>            
+            </div>  
+            <div class="buttn">
+                <button type="button" onclick="getValues()">Submit</button>
+                <button type="button" onclick="clearValues()">Clear</button>
+                <button type="button" onclick="moveToNewPage()">Cancel</button>
+            </div>
+            </feildset>
+    </div>
+
+    <p id="jsondata"></p>
+
+    <footer>
+        <p>&copy;All Copy Rights are Reserved</p>
+    </footer> 
+
+</body>
+
+</html>
